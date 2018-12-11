@@ -1,5 +1,10 @@
 img#profilepic {
     border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 80%;
+    height: 80%;
+    transition: 0.5s;
 }
 
 span#name {
@@ -7,17 +12,21 @@ span#name {
 }
 
 div#userinfo {
-    width: 200px;
-    height: 300px;
+    width: 100%;
+    height: 78%;
     display: inline-block;
-    padding-top: 10px;
-    padding-left: 10px;
+    position: relative;
+    /* padding-top: 25px; */
+    /* padding-left: 25px; */
 }
 
 div#name {
     font-family: cursive;
     text-align: center;
-    margin-top: 10px;
+    /* vertical-align: middle; */
+    /* margin-top: 10px; */
+    transition: 0.5s;
+    /* right: 0px; */
 }
 
 div#info {
@@ -29,9 +38,10 @@ div#info {
 div#Bio {
     display: table;
     margin-left: 20px;
-    width: calc(100% - 230px);
+    margin-right: 20px;
+    width: calc(100% - 300px);
     font-family: cursive;
-    height: 300px;
+    height: 100%;
     float: right;
     vertical-align: middle;
 }
@@ -39,8 +49,95 @@ div#Bio {
 div#biotext {
     display: table-cell;
     vertical-align: middle;
+    transition: 0.5s;
 }
 
 div#userinfodiv {
     background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    height: 320px;
+    /* position: relative; */
+    display: inline-block;
+    transition: 0.4s;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+div#userinfodiv .shrink {}
+
+div#userinfodiv.shrink {
+    height: 100px;
+    position: fixed;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+div#userinfobox {
+    width: 250px;
+    height: 100%;
+    float: left;
+    position: absolute;
+}
+
+.shrink img#profilepic {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.shrink div#name {
+    width: calc(100% - 100px);
+    position: absolute;
+    float: right;
+    right: 0px;
+    bottom: 35px;
+    /* display: inline-block; */
+    transition: 0.5s;
+}
+
+.shrink div#userinfo {
+    width: 100px;
+    height: 100px;
+    /* display: inline-block; */
+    /* float: left; */
+    transition: 0.5s;
+    /* position: absolute; */
+}
+
+.shrink div#info {
+    width: 50%;
+    display: none;
+}
+
+.shrink div#biotext {
+    opacity: 0;
+}
+
+div#resume-start {
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    position: relative;
+    font-family: cursive;
+    transition: top 0.5s;
+}
+
+.shrink~div#resume-start {
+    top: 100px;
+}
+
+body {
+    overflow: scroll;
+}
+
+div#dummydiv {
+    height: 320px;
+    width: 90%;
+    position: relative;
+    transition: 0.5s;
+}
+
+.shrink~div#dummydiv {
+    height: 100px;
 }
