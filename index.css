@@ -315,6 +315,7 @@ div#identifier {
     bottom: 15px;
     left: 0;
     pointer-events: all;
+    transition: background 0.3s;
 }
 
 .identifier+.identifier {
@@ -323,8 +324,9 @@ div#identifier {
 
 .identifier:hover {
     opacity: 1;
-    cursor: hand;
-    background: cadetblue;
+    cursor: pointer;
+    background: #338487;
+    transition: background 0.3s;
 }
 
 canvas {
