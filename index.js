@@ -25,6 +25,9 @@ var attachEvents = function(){
     document.getElementById('aca').onclick = function(){
         document.getElementsByTagName('body')[0].scrollTop = 102 + document.getElementById('projects').offsetTop
     }
+    document.getElementById('con').onclick = function(){
+        document.getElementsByTagName('body')[0].scrollTop = 102 + document.getElementById('contact').offsetTop
+    }
 }
 
 var expandcollapse = function(){
