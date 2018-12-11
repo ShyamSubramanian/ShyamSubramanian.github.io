@@ -301,7 +301,7 @@ div#projectscontent {
     display: inline-block;
     border: 1px solid;
     padding: 10px;
-    cursor: hand
+    cursor: pointer;
     /* opacity: 0.8; */
 }
 
