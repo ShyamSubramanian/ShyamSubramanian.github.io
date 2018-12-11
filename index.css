@@ -33,6 +33,7 @@ div#info {
     font-family: cursive;
     text-align: center;
     font-size: 12px;
+    pointer-events: all;
 }
 
 div#Bio {
@@ -45,6 +46,7 @@ div#Bio {
     float: right;
     vertical-align: middle;
     position: relative;
+    pointer-events: none;
 }
 
 div#biotext {
@@ -80,6 +82,7 @@ div#userinfobox {
     height: 100%;
     float: left;
     position: absolute;
+    pointer-events: none;
 }
 
 .shrink img#profilepic {
@@ -311,6 +314,7 @@ div#identifier {
     position: absolute;
     bottom: 15px;
     left: 0;
+    pointer-events: all;
 }
 
 .identifier+.identifier {
