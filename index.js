@@ -6,6 +6,27 @@ var scrolllistener = function(event){
     }
 }
 
+var attachEvents = function(){
+    document.getElementById('edu').onclick = function(){
+        document.getElementsByTagName('body')[0].scrollTop = 102 + document.getElementById('education').offsetTop
+    }
+    document.getElementById('cou').onclick = function(){
+        document.getElementsByTagName('body')[0].scrollTop = 102 + document.getElementById('courses').offsetTop
+    }
+    document.getElementById('ski').onclick = function(){
+        document.getElementsByTagName('body')[0].scrollTop = 102 + document.getElementById('skills').offsetTop
+    }
+    document.getElementById('exp').onclick = function(){
+        document.getElementsByTagName('body')[0].scrollTop = 102 + document.getElementById('workexp').offsetTop
+    }
+    document.getElementById('cer').onclick = function(){
+        document.getElementsByTagName('body')[0].scrollTop = 102 + document.getElementById('certi').offsetTop
+    }
+    document.getElementById('aca').onclick = function(){
+        document.getElementsByTagName('body')[0].scrollTop = 102 + document.getElementById('projects').offsetTop
+    }
+}
+
 var expandcollapse = function(){
     var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -26,4 +47,5 @@ var expandcollapse = function(){
 window.onload = function(event){
     document.getElementsByTagName('body')[0].onscroll = scrolllistener;
     expandcollapse()
+    attachEvents()
 }

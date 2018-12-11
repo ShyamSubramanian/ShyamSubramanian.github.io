@@ -44,6 +44,7 @@ div#Bio {
     height: 100%;
     float: right;
     vertical-align: middle;
+    position: relative;
 }
 
 div#biotext {
@@ -294,4 +295,27 @@ div#projectscontent {
 
 .expand:after {
     content: "+";
+}
+
+.identifier {
+    display: inline-block;
+    border: 1px solid;
+    padding: 10px;
+    /* opacity: 0.8; */
+}
+
+div#identifier {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.identifier+.identifier {
+    margin-left: 20px;
+}
+
+.identifier:hover {
+    opacity: 1;
+    cursor: hand;
+    background: cadetblue;
 }
