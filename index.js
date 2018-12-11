@@ -6,6 +6,8 @@ var scrolllistener = function(event){
     }
 }
 
-document.onload = function(event){
-    document.getElementsByTagName('body').onscroll = scrolllistener;
+window.onload = function(event){
+    setTimeout(() => {
+        document.getElementsByTagName('body')[0].onscroll = scrolllistener;
+    }, 500);
 }
