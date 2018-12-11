@@ -279,3 +279,19 @@ div#workexpcontent {
 div#projectscontent {
     color: white;
 }
+
+.expand {
+    float: right;
+    font-size: 26px;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
+
+.active .expand:after {
+    content: "-";
+}
+
+.expand:after {
+    content: "+";
+}
