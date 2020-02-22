@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-remote_theme: phlow/feeling-responsive
+remote_theme: feeling-responsive
 plugins:
   - jekyll-feed
 
