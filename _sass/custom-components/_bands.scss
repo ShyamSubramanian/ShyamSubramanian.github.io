@@ -1,0 +1,32 @@
+.bands{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #293e4a;
+    .band{
+        display: flex;
+        flex: 1 1 auto;
+        padding-top: 50px;
+        
+        img {
+            margin-bottom: 1rem;
+        }
+
+        &:last-child{
+            padding-bottom: 50px;
+        }
+
+        &:nth-child(even){
+            img{
+                order: 2;
+            }
+        }
+    
+        &:nth-child(odd){
+            img{
+            }
+        }
+    }
+    .card{
+        background-color: #f0f2f2;
+    }
+}

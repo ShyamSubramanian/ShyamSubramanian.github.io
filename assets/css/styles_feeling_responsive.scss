@@ -36,14 +36,19 @@ sitemap:
 @import "foundation-components/top-bar";
 @import "foundation-components/type";
 @import "foundation-components/visibility";
+@import "foundation-components/card";
 
 @import "06_typography.scss";
 @import "07_layout.scss";
 @import "foundation-components/grid";
 @import "09_elements.scss";
 
+@import "custom-components/bands";
+
 {% if site.asciidoctor-enabled == true %}
 @import "10_asciidoc.scss";
 {% endif %}
 
 @import "11_syntax-highlighting.scss";
+
+@include foundation-card;

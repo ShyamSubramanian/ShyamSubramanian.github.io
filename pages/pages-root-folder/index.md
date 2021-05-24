@@ -6,22 +6,31 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: header_unsplash_12.jpg
+  title: Shyam Subramanian
+  image_fullwidth: header_unsplash_1.jpg
+  caption: Data, Code, Music & Coffee ♥
+
+para:
+  title: About me
+  text: "I am a Senior Data Scientist at Fidelity Investments. I have a Master's degree in Data Science from Worcester Polytechnic Institute and a Bachelor's degree in Computer Science from Anna University. I am passionate about data, programming, and research. Apart from academics, I love music. I play piano & I love to sing."
+
 widget1:
-  title: "Blog & Portfolio"
-  url: 'http://phlow.github.io/feeling-responsive/blog/'
-  image: widget-1-302x182.jpg
-  text: 'Every good portfolio website has a blog with fresh news, thoughts and develop&shy;ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
+  title: "Research & Projects"
+  url: '/research-projects/'
+  image: "unsplash-research.jpg"
+  text: 'Research and Projects have been the best tool to keep myself motivated and up to date with the state-of-the-art. It also helps me network with other researchers. My research interests are in Natural Language Processing.'
+  
 widget2:
-  title: "Why use this theme?"
-  url: 'http://phlow.github.io/feeling-responsive/info/'
-  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+  title: "Blog"
+  url: '/blog/'
+  image: widget-1-302x182.jpg
+  text: 'I strongly believe that knowledge is most useful when it is shared. It also helps me understand and articulate better. I will also share some of the experiences that I find shareworthy! Follow along :)'
+
 widget3:
-  title: "Download Theme"
-  url: 'https://github.com/Phlow/feeling-responsive'
-  image: widget-github-303x182.jpg
-  text: '<em>Feeling Responsive</em> is free and licensed under a MIT License. Make it your own and start building. Grab the <a href="https://github.com/Phlow/feeling-responsive/tree/bare-bones-version">Bare-Bones-Version</a> for a fresh start or learn how to use it with the <a href="https://github.com/Phlow/feeling-responsive/tree/gh-pages">education-version</a> with sample posts and images. Then tell me via Twitter <a href="http://twitter.com/phlow">@phlow</a>.'
+  title: "Creative Space"
+  url: '/creative-space/'
+  image: creativity-3.jpg
+  text: '"You can’t wait for inspiration, you have to go after it with a club" - <em>Jack Landon</em>. This space is to inspire myself to create. You can find things that I find creative and inspiring. Surprises await!!'
 #
 # Use the call for action to show a button on the frontpage
 #
@@ -32,10 +41,11 @@ widget3:
 # to use the main color or success, alert or secondary.
 # To change colors see sass/_01_settings_colors.scss
 #
-callforaction:
-  url: https://tinyletter.com/feeling-responsive
-  text: Inform me about new updates and features ›
-  style: alert
+# callforaction:
+#   url: https://tinyletter.com/feeling-responsive
+#   text: Contact me ›
+#   style: primary
+
 permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight
@@ -43,10 +53,3 @@ permalink: /index.html
 #
 homepage: true
 ---
-
-<div id="videoModal" class="reveal-modal large" data-reveal="">
-  <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
