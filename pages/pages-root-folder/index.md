@@ -13,6 +13,7 @@ header:
 para:
   title: About me
   text: "I am a Senior Data Scientist at Fidelity Investments. I have a Master's degree in Data Science from Worcester Polytechnic Institute and a Bachelor's degree in Computer Science from Anna University. I am passionate about data, programming, and research. Apart from academics, I love music. I play piano & I love to sing."
+  url: "/about/"
 
 widget1:
   title: "Research & Projects"

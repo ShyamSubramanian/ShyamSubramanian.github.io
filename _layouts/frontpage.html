@@ -13,7 +13,12 @@ format: frontpage
 <div class="row">
     {% if page.para.text or page.para.title %}
         <h1>{{page.para.title}}</h1>
-        <p>{{page.para.text}}</p>
+        <p>
+            {{page.para.text}}
+            {% if page.para.url %}
+                <a href="{{page.para.url}}">&nbsp;&nbsp;Read More</a>
+            {% endif %}
+        </p>
     {% endif %}
 </div>
 
